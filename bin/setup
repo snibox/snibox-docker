@@ -19,10 +19,10 @@ function report_status() {
   fi
 }
 
-echo "Copy .env.production.sample to .env:"
+echo "Copy .env.sample to .env:"
 if [ ! -f .env ]
 then
-  cp .env.production.sample .env
+  cp .env.sample .env
   report_status
 else
   echo -e "${GREEN}File .env already exists${NC}"
