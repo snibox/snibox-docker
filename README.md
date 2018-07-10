@@ -1,6 +1,12 @@
 # Snibox: Docker deployment
 Scripts to setup [Snibox](https://github.com/snibox/snibox) on your machine using [Docker Compose](https://docs.docker.com/compose/).
 
+## Table of Contents
+- [Deployment](#deployment)
+- [Controls](#controls)
+- [Upgrade to latest version](#upgrade-to-latest-version)    
+- [License](#license)
+
 ## Deployment
 Clone the repository:
 ```
@@ -35,7 +41,7 @@ Visit http://localhost:8000/ to view the project!
 ./bin/docker/restart
 ```
 
-## Update project
+## Upgrade to latest version
 
 Update scripts:
 ```
