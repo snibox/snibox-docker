@@ -15,12 +15,12 @@ git clone https://github.com/snibox/snibox-docker.git
 
 Setup services:
 ```
-./bin/docker/setup
+./bin/setup
 ```
 
 Launch [Snibox](https://github.com/snibox/snibox) at 8000 port:
 ```
-./bin/docker/start
+./bin/start
 ```
 
 Visit http://localhost:8000/ to view the project!
@@ -28,17 +28,17 @@ Visit http://localhost:8000/ to view the project!
 ## Controls
 - start
 ```
-./bin/docker/start
+./bin/start
 ```
 
 - stop
 ```
-./bin/docker/stop
+./bin/stop
 ```
 
 - restart
 ```
-./bin/docker/restart
+./bin/restart
 ```
 
 ## Upgrade to latest version
@@ -50,7 +50,7 @@ git pull
 
 Update services:
 ```
-./bin/docker/setup
+./bin/setup
 ```
 
 ## License
