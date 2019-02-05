@@ -19,6 +19,10 @@ function report_status() {
   fi
 }
 
+echo -e "\nPull images:"
+docker-compose pull
+report_status
+
 echo "Copy .env.sample to .env:"
 if [ ! -f .env ]
 then
@@ -40,10 +44,6 @@ then
 else
   echo -e "${GREEN}Personal secret key exists${NC}"
 fi
-
-echo -e "\nPull images:"
-docker-compose pull
-report_status
 
 echo -e "\nCreate database:"
 docker-compose run --rm backend ./bin/rake db:create
