@@ -19,11 +19,11 @@ function report_status() {
   fi
 }
 
-echo -e "\nPull images:"
+echo -e "Pull images:"
 docker-compose pull
 report_status
 
-echo "Copy .env.sample to .env:"
+echo -e "\nCopy .env.sample to .env:"
 if [ ! -f .env ]
 then
   cp .env.sample .env
