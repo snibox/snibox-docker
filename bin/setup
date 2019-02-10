@@ -19,11 +19,7 @@ function report_status() {
   fi
 }
 
-echo -e "Pull images:"
-docker-compose pull
-report_status
-
-echo -e "\nCopy .env.sample to .env:"
+echo -e "Copy .env.sample to .env:"
 if [ ! -f .env ]
 then
   cp .env.sample .env
@@ -31,6 +27,10 @@ then
 else
   echo -e "${GREEN}File .env already exists${NC}"
 fi
+
+echo -e "\nPull images:"
+docker-compose pull
+report_status
 
 echo -e "\nInject secret key:"
 if grep -Rq "$DEFAULT_SECRET" .env
