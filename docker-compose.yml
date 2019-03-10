@@ -34,7 +34,7 @@ services:
       - database
 
   database:
-    image: postgres:10.1-alpine
+    image: postgres:10.7-alpine
     volumes:
       - pg-data:/var/lib/postgresql/data
 
