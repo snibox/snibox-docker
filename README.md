@@ -46,7 +46,7 @@ At the same time next wrappers available for quick start:
 ```
 
 ## Upgrade to latest version
-Dump database.
+Backup database.
 
 Update scripts:
 ```
