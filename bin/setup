@@ -35,7 +35,7 @@ report_status
 echo -e "\nInject secret key:"
 if grep -Rq "$DEFAULT_SECRET" .env
 then
-  secret=$(docker-compose run --rm --no-deps backend ./bin/rake secret)
+  secret=$(docker compose run --rm --no-deps backend ./bin/rake secret)
   echo "$secret"
   # based on https://stackoverflow.com/a/22084103
   sed -i.bak "s/$DEFAULT_SECRET/$secret/" .env
