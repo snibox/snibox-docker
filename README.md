@@ -26,7 +26,7 @@ Launch [Snibox](https://github.com/snibox/snibox) at 8000 port:
 Visit http://localhost:8000/ to view the project!
 
 ## Controls
-You can use [docker-compose commands](https://docs.docker.com/compose/reference/overview/) to run containers as usual.
+You can use [docker compose commands](https://docs.docker.com/compose/reference/overview/) to run containers as usual.
 
 At the same time next wrappers available for quick start:
 
