@@ -29,7 +29,7 @@ else
 fi
 
 echo -e "\nPull images:"
-docker-compose pull
+docker compose pull
 report_status
 
 echo -e "\nInject secret key:"
@@ -46,11 +46,11 @@ else
 fi
 
 echo -e "\nCreate database:"
-docker-compose run --rm backend ./bin/rake db:create
+docker compose run --rm backend ./bin/rake db:create
 report_status
 
 echo -e "\nRun migrations:"
-docker-compose run --rm backend ./bin/rake db:migrate
+docker compose run --rm backend ./bin/rake db:migrate
 report_status
 
 echo -e "\n${GREEN}Setup completed!${NC}"
